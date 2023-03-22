@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form>
+        <label for="name">First name</label>
+        <input type="text" id="name" pattern="[A-Za-z]{3,16}" maxlength="25" required/>
+        <br>
+        <label for="Lname">Last name</label>
+        <input type="text" id="Lname" pattern="[A-Za-z]{3,16}" maxlength="25" required/>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" pattern="[A-Za-z]@[a-z]^{3}.[a-z]^{3}" required/>
+        <br>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+        <br>
+        <label for="postcode">PostCode</label>
+        <input type="text" id="postcode" pattern="[0-9]{5}" required/>
+        <br>  
+        <label for="date">Date</label>
+        <input type="datetime-local" id="date" required/>
+        <br>
+        <label for="Card">Credit Card</label>
+        <input type="text" id="Card" pattern="[0-9]{16}" required/>
+        <br>
+        <label for="IP">IP address</label>
+        <input type="text" id="IP" pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}.[0-9]{2}"required/>
+        <br>
+        <label for="add">Additional comments</label>
+        <textarea type="text" id="add"></textarea>
+        <br>
+        <input type="submit" onclick=""/>
+        <input type="reset" />
+    </form>
+</body>
+</html>
